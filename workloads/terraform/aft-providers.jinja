@@ -1,0 +1,92 @@
+## Auto generated providers.tf ##
+## Updated on: {{ timestamp }} ##
+
+provider "aws" {
+  region = "{{ provider_region }}"
+  assume_role {
+    role_arn = "{{ target_admin_role_arn }}"
+  }
+  default_tags {
+    tags = {
+      managed_by = "AFT"
+    }
+  }
+}
+
+provider "aws" {
+  region = "eu-west-1"
+  alias  = "logarchive_eu_west_1"
+  assume_role {
+    role_arn = "arn:aws:iam::656648825551:role/AWSAFTExecution"
+  }
+  default_tags {
+    tags = {
+      managed_by = "AFT"
+    }
+  }
+}
+
+provider "aws" {
+  region = "eu-west-1"
+  alias  = "mgt_eu_west_1"
+  assume_role {
+    role_arn = "arn:aws:iam::059099829413:role/AWSAFTExecution"
+  }
+  default_tags {
+    tags = {
+      managed_by = "AFT"
+    }
+  }
+}
+
+provider "aws" {
+  region = "eu-west-1"
+  alias  = "sharedservices_eu_west_1"
+  assume_role {
+    role_arn = "arn:aws:iam::267919140795:role/AWSAFTExecution"
+  }
+  default_tags {
+    tags = {
+      managed_by = "AFT"
+    }
+  }
+}
+
+provider "aws" {
+  region = "eu-west-1"
+  alias  = "logging_eu_west_1_dev"
+  assume_role {
+    role_arn = "arn:aws:iam::370386503093:role/AWSAFTExecution"
+  }
+  default_tags {
+    tags = {
+      managed_by = "AFT"
+    }
+  }
+}
+
+provider "aws" {
+  region = "eu-west-1"
+  alias  = "logging_eu_west_1_pro"
+  assume_role {
+    role_arn = "arn:aws:iam::212394406696:role/AWSAFTExecution"
+  }
+  default_tags {
+    tags = {
+      managed_by = "AFT"
+    }
+  }
+}
+
+provider "aws" {
+  region = "eu-west-3"
+  alias  = "eu_west_3"
+  assume_role {
+    role_arn = "{{ target_admin_role_arn }}"
+  }
+  default_tags {
+    tags = {
+      managed_by = "AFT"
+    }
+  }
+}
